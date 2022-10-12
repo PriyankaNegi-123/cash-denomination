@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cash Denominator</title>
+    <link rel="stylesheet" href="./styles/normalise.css">
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <header>
+        <h1 class="header__title">Cash Denominator</h1>
+    </header>
+    <main>
+        <div class="container">
+            <div class="input-control">
+                <label for="bill-amount">Bill Amount</label>
+                <input type="number" name="bill-amount" id="bill-amount">
+            </div>
+            <div class="input-control">
+                <label for="amount-paid">Amount Paid</label>
+                <input type="number" name="amount-paid" id="amount-paid">
+            </div>
+            <div class="input-control"> 
+                <button class="btn-calculate" id="btn-calculate">Calculate</button>
+            </div>
+            <p id="error-message" class="error-message"></p>
+            <div class="success-container" id="success-container">
+                <h3 class="success-message" id="success-message"></h3>
+                <div class="denomination-header">
+                    <p class="denomination-value">Value</p>
+                    <p class="denomination-count">Count</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./script/script.js"></script>
+</body>
+</html>
