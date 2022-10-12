@@ -45,12 +45,13 @@ const displayUI = function (){
 }; 
 
 btnCalculate.addEventListener("click", () =>{
+    billAmount.value= null;
+    amountPaid.value= null;
     const billValue = Number(billAmount.value);
     const paidValue = Number(amountPaid.value);
     const change = paidValue - billValue;
 
-    billAmount.value= null;
-    amountPaid.value= null;
+
     
     if(billValue > 0 && paidValue > 0){
         if(change >= 0){
