@@ -33,7 +33,7 @@ const displayUI = function (){
     const listEl = document.createElement("ul");
     listEl.classList.add("denomination");
     successContainer.appendChild(listEl);
-
+    
     for(let i=0; i<denominations.length; i++){
         const listItem = document.createElement("li");
         listItem.classList.add("list-item");
@@ -51,6 +51,7 @@ btnCalculate.addEventListener("click", () =>{
 
     billAmount.value= null;
     amountPaid.value= null;
+    denominationCount = []
     
     if(billValue > 0 && paidValue > 0){
         if(change >= 0){
@@ -68,3 +69,8 @@ btnCalculate.addEventListener("click", () =>{
         showErrorMessage("Enter valid bill & amount");
     }
 });
+
+
+
+
+

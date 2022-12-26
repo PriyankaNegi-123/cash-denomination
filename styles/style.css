@@ -166,7 +166,7 @@ input[type = "number"]{
     border-left: 1px solid var(--clr-dark);
 }
 
-@media (max-width){
+@media (max-width: 480px){
     .container{
         min-width: 50%;
     }
