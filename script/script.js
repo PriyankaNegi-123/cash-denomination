@@ -30,6 +30,7 @@ const calculateDenomination = function(change){
 };
 
 const displayUI = function (){
+    successContainer.innerHTML = null;
     const listEl = document.createElement("ul");
     listEl.classList.add("denomination");
     successContainer.appendChild(listEl);
